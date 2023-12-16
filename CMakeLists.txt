@@ -36,7 +36,7 @@ endif (FORTRAN_COMPILER)
 #  tells CMake to build the application ex1 from the source file ex1.c
 #  this must appear AFTER the compilers are set
 project(ex1)
-add_executable(ex1 ex1.c)
+add_executable(ex1 src/ex2.c)
 
 find_package(PkgConfig REQUIRED)
 pkg_search_module(PETSC REQUIRED IMPORTED_TARGET PETSc)
